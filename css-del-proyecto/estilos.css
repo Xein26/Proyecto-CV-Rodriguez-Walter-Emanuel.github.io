@@ -1,0 +1,524 @@
+/** Esta primera parte son los estilos utilizados para el inicio **/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 5%;
+    background-color: rgb(0, 0, 41);
+}
+
+/* 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+  } 
+  */
+
+.wrapper, .DatosPersonales {
+    width: 100vw;
+    height: 100vh;
+    background-color:#000000f5 ;
+    color:#1E90FF ;
+}
+
+.brand {
+    margin-top: -7px;
+}
+
+.brand span {
+    color: #ffffff;
+}
+
+.menu {
+display: flex;
+width: 60%;
+justify-content: space-around;
+}
+
+.menu a {
+    color: #1E90FF;
+    text-decoration: none;
+    padding: 10px 5px;
+}
+
+.menu li{
+    list-style:none ;
+}
+
+.DatosPersonales li{
+margin: 10px;
+}
+
+.menu .active{
+color: #ffffff;
+}
+
+.menu a:hover{
+    background-color: #1E90FF;
+    color :#000000;
+    transition: ease-in .3s;
+}
+
+.toggle-menu, .Contenido-sub, .redes-sociales_info-contenido {
+    display: none;
+}
+
+.principal {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid; 
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;   
+}
+
+.principal img {
+    border: 7px solid #1E90FF;
+    width: 250px;
+    height: 250px;
+    min-width: 150px;
+    min-height: 150px;
+    padding: 1em;
+    margin-top: 100px;
+}
+
+h1{
+    font-size: clamp (4vw, 1.5em, 3em );
+    margin-top: 200px;
+}
+
+span {
+    color: #ffffff;
+}
+
+.descargar-cv{
+    padding: 10px 20px;
+    background-color: #1E90FF;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px 5px #1e90ffb0
+}
+
+.descargar-cv:hover{
+    background-color: #ffffff;
+    box-shadow: none;
+    color: #1e90ff;
+    transition: ease-in .3s;
+}
+
+.info-contenido p {
+color: #ffffff ;
+padding: 2em;
+}
+
+
+/** Segunda parte de estilos para el "acerca de mi" **/
+
+.acerca{
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    display: grid; 
+    grid-template-columns: repeat(10,1fr);
+    align-items: center;
+    background-color: #141414;
+}
+
+.acerca img {
+    width: 100%;
+    grid-column: 1/5;
+}
+
+.acerca-info{
+    grid-column: 5/10;
+    padding: 3em;
+}
+
+.acerca-info h2 {
+font-size: 2em;
+color: #ffffff;
+}
+
+.divisor {
+    height: 3px;
+    width: 80px;
+    background-color: #1E90FF ;
+    margin-top: 5px;
+    margin-bottom: 2em;
+}
+
+.acerca p {
+    margin-bottom: 1em;
+    color: #f5f5f5;
+}
+
+/** Estilos para los datos personales **/
+
+.DatosPersonales{
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    display: grid; 
+    grid-template-columns: repeat(10,1fr);
+    align-items: center;
+}
+
+.datos-de-cabecera {
+    padding: 3em;
+    grid-column: 5/10
+}
+
+.DatosPersonales h2{
+    font-size: 2em;
+    color:aliceblue;
+}
+
+.DatosPersonales img{
+    width: 100%;
+    grid-column: 1/5;
+} 
+
+.DatosPersonales ul{
+    color: #ffffff
+}
+
+
+/* Estilos para formación */ 
+
+
+.formación{
+    background-color: #000014;
+    width: 100vw;    
+    color:#ffffff ;
+}
+
+.formación-encabezamiento{
+    width: 100vw;
+    padding: 2em;
+}
+
+.formación-encabezamiento h2 {
+    font-size: 2.5em;
+}
+
+.formación .contenedor {
+    width: 80vw;
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contenedor h2 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.contenedor p {
+    margin: 1em;
+}
+
+.card {
+    width: 300px;
+    background-color: #141414;
+    margin: 1em;
+}
+
+.card__img {
+    width: 100%;
+    height: 150px;
+    background-image: url(../img-del-proyecto/Formación.jpg);
+    background-size: cover;
+}
+
+.card__img2 {
+    width: 100%;
+    height: 150px;
+    background-image: url(../img-del-proyecto/Habilidades.jpg);
+    background-size: cover;
+}
+
+.card__img3 {
+    width: 100%;
+    height: 150px;
+    background-image: url(../img-del-proyecto/Expcapac.jpg);
+    background-size: cover;
+}
+
+.card__title{
+    padding: 20px;
+}
+
+.card__title #despliegue, #despliegue1, #despliegue2{
+    cursor: pointer;
+}
+
+.card__title #oculto, #oculto1, #oculto2{
+    right: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.card__title .detalle, .detalle1, .detalle2{
+display:none;
+}
+
+.detalle{
+    font-size: 1em;
+}
+
+.detalle li, .detalle1 li, .detalle2 li{
+    margin: 10px;
+}
+
+/* Estilos para contacto */
+
+.contacto-sección {
+    background-color: #040005;
+    color: #ffffff;
+}
+
+.contacto-cabeza{
+    font-size: 2em;
+    padding: 1em;
+    margin-bottom: -50px;
+}
+
+.contenedor-contacto{
+    display:flex;
+    padding: 3em;
+    margin: -30px auto;
+}
+
+.contenedor-contacto img{
+    width: 400px;
+    height: 300px; 
+    bottom: 0px;
+    padding: 1em;
+}
+
+.forma-control{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+}
+
+.forma-control input {
+padding: 10px 20px;
+margin-bottom: 1em;
+}
+
+.forma-control textarea{
+    height: 150%;
+    padding: 1.5em;
+}
+
+
+.btn-enviar {
+    padding: 10px 20px;
+    background-color: #1E90FF;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px 5px #1e90ffb0
+}
+
+.btn-enviar:hover{
+    background-color: #ffffff;
+    box-shadow: none;
+    color: #1e90ff;
+    transition: ease-in .3s;
+}
+
+.redes-sociales{
+    padding: 1em;
+    margin-left: 30px;
+    margin-bottom: -50px;
+    font-size: 2em;
+}
+
+
+.instagram {
+    color:#ff4362;
+}
+
+.instagram:hover{
+    padding: 10px 20px;
+    background-color: #ff4362;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px 5px #ff4362;
+}
+
+.linkedin {
+    color: #3d3dd4;
+} 
+
+.linkedin:hover{
+    padding: 10px 20px;
+    background-color: #3d3dd4;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px 5px #3d3dd4;    
+}
+
+.redes-sociales a{
+    padding: 0.5em;
+}
+
+.forma-contacto h4{
+    font-size: 2em;
+}
+
+
+/* Estilo para el footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50px;
+    background-color: #111111;
+    color: #ffffff;
+    padding: 2em;
+}
+
+.contenedor-footer h2 {
+    font-size: 1.5em;
+}
+
+.contenedor-footer h5 {
+    font-size: 1em;
+}
+
+
+/* Resposive */
+
+@media screen and (max-width: 800px) {
+
+    h1{
+       margin: 10px;
+    }
+    
+    .menu{
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background-color: #2b3058;
+        z-index: 1;
+        transform: translate(-110%);
+        transition: all .5s ease-in-out;
+    }
+
+    .show-menu{
+        transform: translateX(0%);
+        transition: all .5s ease-in-out
+    }
+
+    .menu li{
+        margin: 2em;
+    }
+
+    .toggle-menu{
+        display: block;
+    }
+
+    .fa-bars{
+        font-size: 1.5em;
+    }
+
+    .fa-bars:hover {
+    padding: 5px 10px;
+    background-color: #1E90FF;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    margin-top: -10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px 5px #1E90FF;
+    }
+
+    .toggle-menu .fa-close {
+        font-size: 1.7em;
+        display: none;
+    }
+
+    .fa-close:hover {
+        padding: 5px 10px;
+        background-color: #1E90FF;
+        color: #ffffff;
+        border: none;
+        border-radius: 20px;
+        margin-top: -10px;
+        cursor: pointer;
+        box-shadow: 1px 3px 11px 5px #1E90FF;
+        }
+
+  .principal, .acerca{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+
+  .info-contenido{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.redes-sociales_info-contenido, .Contenido-sub{
+    display: block;
+    padding: 1em;
+}
+
+.redes-sociales_info-contenido{
+    justify-content: space-around;
+    font-size: 2em;
+}
+
+.Contenido-sub_p{
+    display: none;
+}
+
+.descargar-cv{
+    display: none;
+}
+
+} 
